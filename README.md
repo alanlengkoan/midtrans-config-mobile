@@ -1,6 +1,6 @@
 # midtrans-config-mobile
 
-midtrans menggunakan paket flutrans pada FLutter.
+midtrans menggunakan paket [flutrans](https://pub.dev/packages/flutrans) pada FLutter.
 #### Android Setup
 
 1. Add style to your **android/app/src/main/res/values/styles.xml** :
