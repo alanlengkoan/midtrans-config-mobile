@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// add
 import 'package:flutrans/flutrans.dart';
 
 void main() => runApp(new MyApp());
@@ -60,7 +61,7 @@ class _MyAppState extends State<MyApp> {
     return new MaterialApp(
       home: new Scaffold(
         appBar: new AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Contoh penggunaan plugin'),
         ),
         body: new Center(
           child: isMakePayment
