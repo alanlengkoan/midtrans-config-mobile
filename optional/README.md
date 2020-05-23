@@ -1,54 +1,28 @@
 # midtrans-config-mobile
 
-midtrans menggunakan paket [flutrans](https://pub.dev/packages/flutrans) pada FLutter.
-#### Android Setup
-
-1. Add style to your **android/app/src/main/res/values/styles.xml** :
-```
-<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-    <item name="windowActionBar">false</item>
-    <item name="windowNoTitle">true</item>
-</style>
-```
-2. And full **styles.xml** will be like below :
-```
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
-        <!-- Show a splash screen on the activity. Automatically removed when
-             Flutter draws its first frame -->
-        <item name="android:windowBackground">@drawable/launch_background</item>
-    </style>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-</resources>
-```
-3. Add the style to you Android Manifest in your **<manifest>** :
-```
-xmlns:tools="http://schemas.android.com/tools"
-```
-4. and Add the style to you Android Manifest in your **<applicatioin>** :
-```
-tools:replace="android:label"
-android:theme="@style/AppTheme"
-```
+untuk bagian ini saya menggunakan cara dengan menggunakan ***servey key API***, yaitu dengan mengirim data ke internet dengan menggunakan paket [http](https://pub.dev/packages/http) dan [url_launcher](https://pub.dev/packages/url_launcher).
 
 #### Installing
 
-1. Add this to your package's pubspec.yaml file:
+1. Add this to your package's **pubspec.yaml** file:
 ```sh
 dependencies:
-  flutrans: ^0.0.4
+  http: ^0.12.1
+  url_launcher: ^5.4.10
 ```
 2. You can install packages from the command line, with Flutter:
 ```sh
 $ flutter pub get
 ```
-3. Now in your Dart code, you can use:
+3. Now in your **main.dart** code, you can use:
 ```
-import 'package:flutrans/flutrans.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:http/http.dart' as http;
+```
+4. In the **main.dart** file add:
+```
+import 'dart:convert';
+import './transaksi.dart';
 ```
 
 #### Penjelasan Access Keys

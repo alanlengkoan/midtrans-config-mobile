@@ -37,7 +37,7 @@ android:theme="@style/AppTheme"
 
 #### Installing
 
-1. Add this to your package's pubspec.yaml file:
+1. Add this to your package's **pubspec.yaml** file:
 ```sh
 dependencies:
   flutrans: ^0.0.4
@@ -46,7 +46,7 @@ dependencies:
 ```sh
 $ flutter pub get
 ```
-3. Now in your Dart code, you can use:
+3. Now in your **main.dart** code, you can use:
 ```
 import 'package:flutrans/flutrans.dart';
 ```
